@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuadrilla Señor de los Milagros</title>
+<style>
+:root{
+  --morado:#4B0F5C;
+  --morado-oscuro:#2C0836;
+  --dorado:#C9A227;
+  --blanco:#FBF8F3;
+  --texto:#2a2a2a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,"Times New Roman",serif;color:var(--texto);background:var(--blanco);line-height:1.6}
+a{color:var(--morado)}
+header{background:linear-gradient(160deg,var(--morado-oscuro),var(--morado));color:#fff;text-align:center;padding:90px 20px 110px;position:relative}
+header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:40px;background:var(--blanco);clip-path:ellipse(60% 100% at 50% 100%)}
+.cruz{font-size:2.6rem;color:var(--dorado);letter-spacing:.2em}
+h1{font-size:clamp(1.8rem,4.5vw,3rem);margin:12px 0 8px;font-weight:700}
+.subtitulo{font-style:italic;color:#e8d9a8;font-size:1.1rem}
+.btn{display:inline-block;margin-top:28px;background:var(--dorado);color:var(--morado-oscuro);padding:12px 28px;border-radius:4px;text-decoration:none;font-weight:700;letter-spacing:.05em}
+.btn:hover{background:#e0b83a}
+section{max-width:1080px;margin:0 auto;padding:64px 20px}
+h2{font-size:2rem;color:var(--morado);text-align:center;margin-bottom:12px}
+.linea{width:70px;height:3px;background:var(--dorado);margin:0 auto 36px}
+.sobre p{max-width:760px;margin:0 auto 16px;text-align:center;font-size:1.05rem}
+.galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.foto{position:relative;aspect-ratio:4/3;border-radius:6px;overflow:hidden;background:linear-gradient(135deg,#7a3a8c,#2C0836);display:flex;align-items:flex-end;padding:14px;color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.foto span{font-size:.9rem;background:rgba(0,0,0,.45);padding:4px 10px;border-radius:3px}
+.foto:nth-child(2n){background:linear-gradient(135deg,#B8891A,#6b4a0b)}
+.foto:nth-child(3n){background:linear-gradient(135deg,#5a1f6b,#C9A227)}
+.nota{text-align:center;font-size:.85rem;color:#777;margin-top:14px}
+.actividades{background:#fff;border-top:1px solid #eadfcc;border-bottom:1px solid #eadfcc}
+.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.tarjeta{border-top:3px solid var(--dorado);padding:22px;background:var(--blanco);border-radius:4px}
+.tarjeta h3{color:var(--morado);margin-bottom:6px}
+.contacto{text-align:center}
+.contacto ul{list-style:none;margin-top:18px;display:inline-block;text-align:left}
+.contacto li{padding:6px 0}
+footer{background:var(--morado-oscuro);color:#e8d9a8;text-align:center;padding:24px;font-size:.9rem}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Hola Mundo</h1>
+  <p class="subtitulo">Prueba</p>
+  <a class="btn" href="#contacto">Contáctanos</a>
+</header>
+
+<section>
+  <h2>Galería</h2>
+  <div class="linea"></div>
+  <div class="galeria">
+    <div class="foto"><span>Galeria 1</span></div>
+    <div class="foto"><span>Galeria 2</span></div>
+    <div class="foto"><span>Galeria 3</span></div>
+    <div class="foto"><span>Galeria 4</span></div>
+    <div class="foto"><span>Galeria 5</span></div>
+    <div class="foto"><span>Galeria 6</span></div>
+  </div>
+  <p class="nota">Los recuadros son marcadores: reemplazar por fotos reales (estilo álbum de Google Fotos).</p>
+</section>
+
+<section class="contacto" id="contacto">
+  <h2>Contacto</h2>
+  <div class="linea"></div>
+  <ul>
+    <li>📍 Dirección: Av. Ejemplo 123, Lima</li>
+    <li>📞 Teléfono / WhatsApp: +51 999 999 999</li>
+    <li>✉️ Correo: negocio@ejemplo.com</li>
+    <li>📘 Facebook / Instagram: @negocio</li>
+  </ul>
+</section>
+
+<footer>
+  © 2026 "negocio" 
+</footer>
+
+</body>
+</html>
